@@ -1,150 +1,166 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111111">
-  <title>MN Contas FF | Contas de Free Fire</title>
-  <meta name="description" content="MN Contas FF — catálogo de contas de Free Fire com informações claras e atendimento dedicado.">
-  <style>
-    :root{--bg:#0b0b0d;--panel:#151518;--panel2:#1d1d22;--red:#f12b35;--text:#f5f5f7;--muted:#b7b7c0;--line:#303037}
-    *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(circle at top,#291014 0,#0b0b0d 38rem);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
-    .wrap{width:min(1120px,92%);margin:auto}
-    header{border-bottom:1px solid #ffffff16;background:#0b0b0ddd;position:sticky;top:0;backdrop-filter:blur(12px);z-index:5}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
-    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px}
-    .mark{width:44px;height:44px;display:grid;place-items:center;background:linear-gradient(145deg,#ff4650,#8e1018);border:1px solid #ff7b81;border-radius:12px;font-size:20px;font-weight:1000;box-shadow:0 0 25px #f12b3533}
-    .brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;margin-top:2px}
-    .navlink{font-size:14px;color:#ddd;font-weight:700}
-    .hero{padding:66px 0 44px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-    .eyebrow{display:inline-block;color:#ff8b90;border:1px solid #f12b3555;background:#f12b3512;padding:7px 11px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:1.2px}
-    h1{font-size:clamp(38px,6vw,66px);line-height:.98;letter-spacing:-2px;margin:20px 0}
-    h1 span{color:var(--red)}
-    .lead{font-size:17px;color:var(--muted);line-height:1.7;max-width:610px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 18px;border-radius:10px;font-weight:850;border:1px solid var(--line);cursor:pointer}
-    .btn-primary{background:var(--red);border-color:var(--red);color:white;box-shadow:0 8px 24px #f12b3528}
-    .btn-secondary{background:#ffffff08}
-    .hero-card{border:1px solid #ffffff1c;border-radius:22px;padding:24px;background:linear-gradient(145deg,#201316,#121215 65%);box-shadow:0 20px 70px #0008}
-    .hero-logo{aspect-ratio:1.15;display:grid;place-items:center;text-align:center;border-radius:16px;background:radial-gradient(circle,#4a1018 0,#161216 48%,#0d0d0f 75%);border:1px solid #f12b354a;position:relative;overflow:hidden}
-    .hero-logo:before{content:"";position:absolute;width:220px;height:220px;border:2px solid #f12b3566;transform:rotate(45deg);border-radius:35px}
-    .hero-logo strong{font-size:clamp(58px,8vw,90px);font-weight:1000;letter-spacing:-7px;text-shadow:0 5px 0 #700b12;z-index:1}
-    .hero-logo b{display:block;color:#ff515b;font-size:15px;letter-spacing:5px;margin-top:-7px;z-index:1}
-    .hero-logo small{z-index:1;margin-top:12px;color:#ddd;font-weight:700;letter-spacing:2px}
-    section{padding:36px 0}
-    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:20px}
-    h2{font-size:clamp(26px,4vw,36px);margin:0;letter-spacing:-.8px}
-    .sub{color:var(--muted);margin:8px 0 0;line-height:1.6}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-    .product{border:1px solid var(--line);background:linear-gradient(160deg,#1b1b20,#111113);border-radius:16px;overflow:hidden}
-    .product-art{height:160px;background:radial-gradient(circle at 50% 40%,#5a1720,#211014 48%,#101012 78%);display:grid;place-items:center;color:#ff4a54;font-size:48px;font-weight:1000;position:relative}
-    .product-art span{border:2px solid #f12b3580;border-radius:16px;padding:14px 20px;transform:rotate(-4deg);text-shadow:0 4px 0 #400}
-    .product-body{padding:17px}
-    .tag{display:inline-block;color:#ff969b;background:#f12b3515;border:1px solid #f12b3544;border-radius:99px;padding:5px 8px;font-size:11px;font-weight:800}
-    .product h3{margin:12px 0 6px;font-size:18px}
-    .product p{color:var(--muted);font-size:13px;line-height:1.5;min-height:40px;margin:0}
-    .price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
-    .price{font-size:23px;font-weight:950}
-    .small-btn{padding:10px 12px;border-radius:9px;background:var(--red);font-size:12px;font-weight:900}
-    .notice{padding:15px 17px;border:1px solid #f12b3540;background:#f12b350c;border-radius:12px;color:#dedee4;font-size:13px;line-height:1.6;margin-top:18px}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .feature{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:19px}
-    .feature .ico{color:var(--red);font-size:25px}
-    .feature h3{margin:10px 0 6px}
-    .feature p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
-    footer{margin-top:35px;border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:12px;line-height:1.7}
-    .footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-    @media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:42px}.hero-card{max-width:430px;width:100%;margin:auto}.grid{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr}.navlink{display:none}}
-    @media(max-width:500px){.grid{grid-template-columns:1fr}.product-art{height:175px}.section-head{display:block}.section-head .btn{margin-top:15px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09090b">
+<title>MN Contas FF | Loja Premium</title>
+<meta name="description" content="MN Contas FF — catálogo de contas de Free Fire e atendimento direto.">
+<style>
+:root{--bg:#09090b;--panel:#141418;--red:#f12d3c;--text:#f7f7f8;--muted:#b9bac4;--line:#303039}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -15%,#421019 0,transparent 42rem),var(--bg);color:var(--text);font-family:Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#0b0b0ded;border-bottom:1px solid #ffffff12}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:950}
+.logo{width:47px;height:47px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#ff4a57,#9d0d1c);border:1px solid #ff8a92;font-size:19px}
+.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.6px;margin-top:3px}
+.links{display:flex;gap:20px;font-size:13px;font-weight:bold;color:#ddd}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:11px;border:1px solid var(--line);font-weight:bold;font-size:13px}
+.red{background:linear-gradient(135deg,#ff3b49,#d41428);border-color:#ff4d59}
+.dark{background:#17171c}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:62px 0 45px}
+.eyebrow{display:inline-block;padding:7px 11px;border-radius:99px;border:1px solid #f12d3c55;background:#f12d3c10;color:#ff8d96;font-size:11px;font-weight:bold;letter-spacing:1px}
+h1{font-size:clamp(38px,6vw,66px);line-height:.98;letter-spacing:-2px;margin:20px 0}
+h1 span,.price{color:var(--red)}
+.lead{font-size:15px;line-height:1.8;color:var(--muted);max-width:580px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
+.trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;color:#ddd;font-size:12px}
+.art{min-height:320px;border:1px solid #f12d3c40;border-radius:24px;background:linear-gradient(145deg,#281015,#111115 68%);display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+.art:before,.art:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #f12d3c45;transform:rotate(45deg);border-radius:30px}
+.art:after{width:160px;height:160px}
+.monogram{position:relative;z-index:1}
+.monogram strong{display:block;font-size:clamp(90px,13vw,145px);line-height:.9;letter-spacing:-10px}
+.monogram b{display:block;color:var(--red);font-size:19px;letter-spacing:5px;margin-top:10px}
+.monogram small{display:block;margin-top:13px;color:#ddd;font-size:10px;letter-spacing:1px}
+section{padding:32px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px}
+h2{font-size:clamp(25px,4vw,35px);margin:0}
+.muted{color:var(--muted);line-height:1.6;margin:8px 0 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}
+.filter{padding:8px 12px;border:1px solid var(--line);border-radius:99px;background:#141418;color:#ddd;font-size:11px;font-weight:bold}
+.filter:first-child{background:var(--red);border-color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(155deg,#19191e,#101013)}
+.account-art{height:155px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#641924,#251015 50%,#111115 82%);position:relative}
+.account-art span{border:2px solid #f12d3c99;border-radius:14px;padding:12px 22px;font-size:32px;font-weight:1000}
+.flag{position:absolute;top:11px;left:11px;background:var(--red);border-radius:6px;padding:5px 7px;font-size:9px}
+.body{padding:15px}
+.body h3{margin:0 0 8px;font-size:16px}
+.details{display:grid;gap:6px;color:#c4c4cc;font-size:12px}
+.details span:before{content:"•";color:var(--red);margin-right:7px}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #ffffff12;margin-top:14px;padding-top:13px}
+.price{font-size:21px;font-weight:950}
+.small{font-size:11px;padding:9px 10px}
+.notice{margin-top:15px;border:1px solid #f12d3c3d;background:#f12d3c0c;border-radius:12px;padding:13px 15px;font-size:12px;color:#ddd;line-height:1.6}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.benefit{border:1px solid var(--line);background:#131317;border-radius:14px;padding:18px}
+.ico{color:#ff5965;font-size:24px}
+.benefit h3{margin:9px 0 6px;font-size:15px}
+.benefit p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;border:1px solid #f12d3c45;border-radius:21px;padding:25px;background:linear-gradient(120deg,#251015,#121216 65%)}
+.contact p{color:var(--muted);line-height:1.7}
+.contacts{display:grid;gap:10px}
+.wa{display:flex;align-items:center;gap:12px;padding:14px;border-radius:12px;border:1px solid #25bb6a70;background:#0b2819}
+.wa.nariel{border-color:#f12d3c70;background:#211014}
+.wa-icon{width:37px;height:37px;display:grid;place-items:center;border-radius:50%;background:#20b963;color:white;font-weight:bold}
+.nariel .wa-icon{background:var(--red)}
+.wa strong{display:block;font-size:13px}
+.wa small{display:block;color:#c7c7cf;margin-top:3px;font-size:11px}
+.arrow{margin-left:auto;color:#ff5b67;font-size:20px}
+footer{margin-top:30px;border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:12px;line-height:1.7}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot strong{color:white}
+@media(max-width:780px){
+.links{display:none}
+.hero{grid-template-columns:1fr;padding-top:40px}
+.art{min-height:250px}
+.grid{grid-template-columns:repeat(2,1fr)}
+.contact{grid-template-columns:1fr}
+.benefits{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+.wrap{width:91%}
+.nav{padding:10px 0}
+.logo{width:42px;height:42px}
+.brand{font-size:12px}
+.brand small{font-size:8px}
+.nav>.btn{font-size:11px;padding:10px}
+.hero{gap:23px;padding:35px 0 25px}
+h1{font-size:40px;letter-spacing:-1.5px}
+.lead{font-size:14px}
+.actions .btn{width:100%}
+.art{min-height:220px}
+.monogram strong{font-size:95px}
+.monogram b{font-size:15px}
+.head{display:block}
+.head>.btn{margin-top:13px}
+.grid,.benefits{grid-template-columns:1fr}
+.account-art{height:175px}
+.contact{padding:18px}
+}
+</style>
 </head>
 <body>
 <header>
-  <div class="wrap nav">
-    <a class="brand" href="#">
-      <span class="mark">MN</span>
-      <span>MN CONTAS FF<small>LOJA GAMER</small></span>
-    </a>
-    <a class="navlink" href="#contas">CONTAS DISPONÍVEIS</a>
-    <a class="btn btn-primary" href="#contato">Falar com a loja</a>
-  </div>
+<div class="wrap nav">
+<a class="brand" href="#inicio"><span class="logo">MN</span><span>MN CONTAS FF<small>SUA CONTA, NOSSA PRIORIDADE</small></span></a>
+<nav class="links"><a href="#contas">Catálogo</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Atendimento</a></nav>
+<a class="btn red" href="#contato">Falar com a loja ↗</a>
+</div>
 </header>
-<main>
-  <div class="wrap hero">
-    <div>
-      <span class="eyebrow">● CATÁLOGO DE CONTAS FREE FIRE</span>
-      <h1>ENCONTRE SUA<br><span>PRÓXIMA CONTA.</span></h1>
-      <p class="lead">Bem-vindo à MN Contas FF. Confira nosso catálogo, veja as informações de cada anúncio e fale com a equipe para tirar suas dúvidas antes de comprar.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#contas">Ver contas disponíveis</a>
-        <a class="btn btn-secondary" href="#como-funciona">Como funciona</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="hero-logo"><div><strong>MN</strong><b>CONTAS FF</b><small>SUA CONTA, NOSSA PRIORIDADE</small></div></div>
-    </div>
-  </div>
-
-  <section id="contas">
-    <div class="wrap">
-      <div class="section-head">
-        <div><h2>Contas em destaque</h2><p class="sub">Exemplos de anúncios — substitua pelos dados reais das contas disponíveis.</p></div>
-      </div>
-      <div class="grid">
-        <article class="product">
-          <div class="product-art"><span>FF</span></div>
-          <div class="product-body"><span class="tag">DESTAQUE</span><h3>Conta Free Fire #01</h3><p>Adicione aqui nível, skins, personagens e outros detalhes verdadeiros.</p><div class="price-row"><span class="price">R$ 00,00</span><a class="small-btn contact-link" href="#contato">Consultar</a></div></div>
-        </article>
-        <article class="product">
-          <div class="product-art"><span>FF</span></div>
-          <div class="product-body"><span class="tag">COLEÇÃO</span><h3>Conta Free Fire #02</h3><p>Descreva os itens incluídos e as condições de acesso com clareza.</p><div class="price-row"><span class="price">R$ 00,00</span><a class="small-btn contact-link" href="#contato">Consultar</a></div></div>
-        </article>
-        <article class="product">
-          <div class="product-art"><span>FF</span></div>
-          <div class="product-body"><span class="tag">DISPONÍVEL</span><h3>Conta Free Fire #03</h3><p>Troque este texto por informações verificadas sobre a conta anunciada.</p><div class="price-row"><span class="price">R$ 00,00</span><a class="small-btn contact-link" href="#contato">Consultar</a></div></div>
-        </article>
-      </div>
-      <div class="notice"><strong>Importante:</strong> os anúncios acima são modelos de exemplo, não ofertas reais. Atualize preços, imagens e características antes de publicar. Leia também as regras aplicáveis do jogo sobre transferência e venda de contas.</div>
-    </div>
-  </section>
-
-  <section id="como-funciona">
-    <div class="wrap">
-      <div class="section-head"><div><h2>Uma compra mais clara</h2><p class="sub">Informações objetivas ajudam cada cliente a decidir com confiança.</p></div></div>
-      <div class="features">
-        <div class="feature"><div class="ico">◈</div><h3>Informações do anúncio</h3><p>Confira os detalhes, o preço e as condições informadas antes de avançar.</p></div>
-        <div class="feature"><div class="ico">✓</div><h3>Atendimento direto</h3><p>Tire suas dúvidas com a loja antes de realizar qualquer pagamento.</p></div>
-        <div class="feature"><div class="ico">⌁</div><h3>Transparência</h3><p>Consulte os procedimentos de entrega e suporte. Não pague sem entender as condições.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="wrap">
-      <div class="hero-card">
-        <h2>Tem alguma dúvida?</h2>
-        <p class="lead">Fale com a MN Contas FF para consultar disponibilidade e obter informações sobre os anúncios.</p>
-        <a class="btn btn-primary"
-   href="https://wa.me/5519971226177"
-   target="_blank" rel="noopener">
-   WhatsApp do Marcos
-</a>
-
-<a class="btn btn-secondary"
-   href="https://wa.me/559887674422"
-   target="_blank" rel="noopener">
-   WhatsApp do Nariel
-</a>
-    </div>
-  </section>
+<main id="inicio">
+<div class="wrap hero">
+<div>
+<span class="eyebrow">◆ LOJA ESPECIALIZADA EM CONTAS FF</span>
+<h1>SUA PRÓXIMA<br><span>CONTA COMEÇA AQUI.</span></h1>
+<p class="lead">Conheça os anúncios da MN Contas FF. Consulte as informações de cada conta e fale diretamente com Marcos ou Nariel antes de decidir.</p>
+<div class="actions"><a class="btn red" href="#contas">Explorar catálogo ↓</a><a class="btn dark" href="#diferenciais">Conhecer a loja</a></div>
+<div class="trust"><span>✓ Informações claras</span><span>✓ Atendimento direto</span><span>✓ Suporte ao cliente</span></div>
+</div>
+<div class="art"><div class="monogram"><strong>MN</strong><b>CONTAS FF</b><small>QUALIDADE • TRANSPARÊNCIA • ATENDIMENTO</small></div></div>
+</div>
+<section id="contas">
+<div class="wrap">
+<div class="head"><div><h2>Catálogo de contas</h2><p class="muted">Confira os anúncios e consulte a disponibilidade com a equipe.</p></div><a class="btn dark" href="#contato">Consultar uma conta ↗</a></div>
+<div class="filters"><span class="filter">Todas as contas</span><span class="filter">Nível alto</span><span class="filter">Skins raras</span><span class="filter">Passe de elite</span></div>
+<div class="grid">
+<article class="card"><div class="account-art"><span>FF</span><b class="flag">EM DESTAQUE</b></div><div class="body"><h3>Conta Free Fire #01</h3><div class="details"><span>Informe o nível real da conta</span><span>Descreva skins e personagens</span><span>Detalhes confirmados pelo vendedor</span></div><div class="price-row"><span class="price">R$ 00,00</span><a class="btn red small" href="#contato">Consultar ↗</a></div></div></article>
+<article class="card"><div class="account-art"><span>FF</span><b class="flag">ANÚNCIO</b></div><div class="body"><h3>Conta Free Fire #02</h3><div class="details"><span>Informe o nível real da conta</span><span>Descreva skins e personagens</span><span>Detalhes confirmados pelo vendedor</span></div><div class="price-row"><span class="price">R$ 00,00</span><a class="btn red small" href="#contato">Consultar ↗</a></div></div></article>
+<article class="card"><div class="account-art"><span>FF</span><b class="flag">ANÚNCIO</b></div><div class="body"><h3>Conta Free Fire #03</h3><div class="details"><span>Informe o nível real da conta</span><span>Descreva skins e personagens</span><span>Detalhes confirmados pelo vendedor</span></div><div class="price-row"><span class="price">R$ 00,00</span><a class="btn red small" href="#contato">Consultar ↗</a></div></div></article>
+</div>
+<div class="notice"><strong>Aviso:</strong> estes são anúncios de exemplo. Substitua nomes, preços e características por informações reais antes de divulgar. Confira os termos do jogo sobre transferência ou venda de contas.</div>
+</div>
+</section>
+<section id="diferenciais">
+<div class="wrap">
+<div class="head"><div><h2>Uma loja feita com transparência</h2><p class="muted">Nosso compromisso é informar com clareza e atender cada cliente com respeito.</p></div></div>
+<div class="benefits">
+<div class="benefit"><div class="ico">◎</div><h3>Informações claras</h3><p>Veja as características e condições de cada anúncio antes de decidir.</p></div>
+<div class="benefit"><div class="ico">↗</div><h3>Atendimento direto</h3><p>Converse com Marcos ou Nariel para tirar dúvidas sobre disponibilidade e processo.</p></div>
+<div class="benefit"><div class="ico">◇</div><h3>Compra consciente</h3><p>Confirme os detalhes e as condições antes de fazer qualquer pagamento.</p></div>
+</div>
+</div>
+</section>
+<section id="contato">
+<div class="wrap">
+<div class="contact">
+<div><span class="eyebrow">ATENDIMENTO</span><h2 style="margin-top:14px">Vamos conversar?</h2><p>Escolha com quem deseja falar. Nossa equipe pode esclarecer dúvidas sobre os anúncios e orientar você sobre os próximos passos.</p></div>
+<div class="contacts">
+<!-- Substitua pelos números reais: código do país + DDD + número, somente algarismos. -->
+<a class="wa" href="https://wa.me/5519971226177" target="_blank" rel="noopener"><span class="wa-icon">W</span><span><strong>WhatsApp do Marcos</strong><small>Falar com a loja</small></span><span class="arrow">›</span></a>
+<a class="wa nariel" href="https://wa.me/559887674422" target="_blank" rel="noopener"><span class="wa-icon">W</span><span><strong>WhatsApp do Nariel</strong><small>Falar com a loja</small></span><span class="arrow">›</span></a>
+</div>
+</div>
+</div>
+</section>
 </main>
 <footer>
-  <div class="wrap footrow">
-    <div><strong style="color:#fff">MN CONTAS FF</strong><br>Catálogo independente de anúncios.</div>
-    <div>Free Fire é uma marca de seus respectivos titulares. Este site não declara ser oficial nem afiliado à Garena. Consulte as regras do jogo antes de negociar contas.</div>
-  </div>
+<div class="wrap foot"><div><strong>MN CONTAS FF</strong><br>Sua conta, nossa prioridade.</div><div>Loja independente. Este site não declara ser oficial nem afiliado à Garena.<br>Free Fire é uma marca de seus respectivos titulares.</div><div>© MN Contas FF</div></div>
 </footer>
 </body>
 </html>
